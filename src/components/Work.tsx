@@ -12,7 +12,7 @@ const Work = () => {
       views: 35,
       likes: 20,
       shares: 15,
-      githubcode: "",
+      githubcode: "https://github.com/hansisandumini",
       technology: ["PHP", "HTML", "CSS", "MySql"],
     },
   ];
@@ -96,6 +96,7 @@ const Work = () => {
                 </button>
               </h1>
             </div>
+            
             {showDetails2 && (
               <div className="py-4">
                 <div className="flex w-1/3 justify-between items-center">
@@ -128,6 +129,17 @@ const Work = () => {
                     </span>
                   ))}
                 </span>
+                <div className="text-white mt-2 flex justify-between">
+                  <a
+                    className="flex items-center gap-1 text-white hover:text-[#cbd5e1] transition-colors duration-300"
+                    href={'https://github.com/hansisandumini/WestminsterSkinConsultation'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                    View Code
+                  </a>
+                </div>
               </div>
             )}
           </div>
