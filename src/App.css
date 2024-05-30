@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.mobile-nav{
+    @apply  fixed top-10 bg-green-500 mt-10 w-full h-1/4 left-0;
+}
+
+.mobile-nav li{
+    @apply text-center border-b-2 w-full h-full pt-2
+}
+.btn{
+    @apply hover:scale-105 transition-all duration-300  rounded px-3 py-4 font-bold text-white
+}
+html{
+    scroll-behavior: smooth;
+    /* font-family: 'Times New Roman', Times, serif; */
+    @apply font-space-mono
+}
+.header {
+    background:  rgba(255, 255, 255, 0.2); /* Set a semi-transparent background color */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  }
+  .font-space-mono {
+    font-family: 'Space Mono', monospace;
+  }
